@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>A creepy  story</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+<body>
+<h1>The basment</h1>
+    <p id="story">I was trying to find my friend,he was hiding in the basment</p>
+<button onclick="goDark()">Time to get ready for the scary creepy part's</button>
+ <div class="textEntry">type your name if you are creeped out<input type="text" id="name"></div>       
+ <button onclick="pl()">PLEASE DONT SHUT ME DOWN!!!</button>
+ <button onclick="fin()">tell me the next chapter</button>    
+ <audio id="audio" src="young-girl-screaming-1-90519.mp3" type="audio/mpeg"></audio>
+    <script>
+
+        function pl(){
+
+            document.getElementById("audio").play();
+            var personName = document.getElementById("name").value;
+
+alert("I told you not to do that " + personName);
+
+}
+
+function goDark() {
+
+document.body.className = "dark";
+
+}
+
+function fin() {
+
+document.getElementById("story").innerHTML = "So I carefully searched the damp dungeon. There you are!";
+
+}
+        
+    </script>
+</body>
+</html>
